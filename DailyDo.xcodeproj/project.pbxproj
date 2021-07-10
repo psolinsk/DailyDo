@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		2D37E50F26985634000D8C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E50E26985634000D8C20 /* AppDelegate.swift */; };
 		2D37E51126985634000D8C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E51026985634000D8C20 /* SceneDelegate.swift */; };
-		2D37E51326985634000D8C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E51226985634000D8C20 /* ViewController.swift */; };
 		2D37E51626985634000D8C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D37E51426985634000D8C20 /* Main.storyboard */; };
 		2D37E51826985636000D8C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D37E51726985636000D8C20 /* Assets.xcassets */; };
 		2D37E51B26985636000D8C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D37E51926985636000D8C20 /* LaunchScreen.storyboard */; };
 		2D37E52626985636000D8C20 /* DailyDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E52526985636000D8C20 /* DailyDoTests.swift */; };
 		2D37E53126985636000D8C20 /* DailyDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E53026985636000D8C20 /* DailyDoUITests.swift */; };
+		2D43E5D42698F80C005E8172 /* FirstTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5D32698F80C005E8172 /* FirstTab.storyboard */; };
+		2D43E5D62698FA6B005E8172 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5D52698FA6B005E8172 /* Settings.storyboard */; };
+		2D43E5D82698FCDA005E8172 /* FirstTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5D72698FCDA005E8172 /* FirstTabVC.swift */; };
+		2D43E5DA26990440005E8172 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5D926990440005E8172 /* SettingsVC.swift */; };
+		2D43E5DC26991253005E8172 /* ToDoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5DB26991253005E8172 /* ToDoList.storyboard */; };
+		2D43E5DE269912DF005E8172 /* ToDoTodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5DD269912DF005E8172 /* ToDoTodayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		2D37E50B26985634000D8C20 /* DailyDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D37E50E26985634000D8C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D37E51026985634000D8C20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D37E51226985634000D8C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D37E51526985634000D8C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D37E51726985636000D8C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D37E51A26985636000D8C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		2D37E52C26985636000D8C20 /* DailyDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D37E53026985636000D8C20 /* DailyDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDoUITests.swift; sourceTree = "<group>"; };
 		2D37E53226985636000D8C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D43E5D32698F80C005E8172 /* FirstTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstTab.storyboard; sourceTree = "<group>"; };
+		2D43E5D52698FA6B005E8172 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		2D43E5D72698FCDA005E8172 /* FirstTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabVC.swift; sourceTree = "<group>"; };
+		2D43E5D926990440005E8172 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2D43E5DB26991253005E8172 /* ToDoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoList.storyboard; sourceTree = "<group>"; };
+		2D43E5DD269912DF005E8172 /* ToDoTodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTodayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +111,8 @@
 			children = (
 				2D37E50E26985634000D8C20 /* AppDelegate.swift */,
 				2D37E51026985634000D8C20 /* SceneDelegate.swift */,
-				2D37E51226985634000D8C20 /* ViewController.swift */,
-				2D37E51426985634000D8C20 /* Main.storyboard */,
+				2D43E5CC2698F41D005E8172 /* ViewControlers */,
+				2D43E5D22698F79E005E8172 /* Storyboards */,
 				2D37E51726985636000D8C20 /* Assets.xcassets */,
 				2D37E51926985636000D8C20 /* LaunchScreen.storyboard */,
 				2D37E51C26985636000D8C20 /* Info.plist */,
@@ -126,6 +136,27 @@
 				2D37E53226985636000D8C20 /* Info.plist */,
 			);
 			path = DailyDoUITests;
+			sourceTree = "<group>";
+		};
+		2D43E5CC2698F41D005E8172 /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				2D43E5D72698FCDA005E8172 /* FirstTabVC.swift */,
+				2D43E5D926990440005E8172 /* SettingsVC.swift */,
+				2D43E5DD269912DF005E8172 /* ToDoTodayVC.swift */,
+			);
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		2D43E5D22698F79E005E8172 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2D37E51426985634000D8C20 /* Main.storyboard */,
+				2D43E5D32698F80C005E8172 /* FirstTab.storyboard */,
+				2D43E5D52698FA6B005E8172 /* Settings.storyboard */,
+				2D43E5DB26991253005E8172 /* ToDoList.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D43E5DC26991253005E8172 /* ToDoList.storyboard in Resources */,
 				2D37E51B26985636000D8C20 /* LaunchScreen.storyboard in Resources */,
+				2D43E5D42698F80C005E8172 /* FirstTab.storyboard in Resources */,
 				2D37E51826985636000D8C20 /* Assets.xcassets in Resources */,
 				2D37E51626985634000D8C20 /* Main.storyboard in Resources */,
+				2D43E5D62698FA6B005E8172 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D37E51326985634000D8C20 /* ViewController.swift in Sources */,
 				2D37E50F26985634000D8C20 /* AppDelegate.swift in Sources */,
+				2D43E5DE269912DF005E8172 /* ToDoTodayVC.swift in Sources */,
+				2D43E5DA26990440005E8172 /* SettingsVC.swift in Sources */,
+				2D43E5D82698FCDA005E8172 /* FirstTabVC.swift in Sources */,
 				2D37E51126985634000D8C20 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X53XBAVA4P;
 				INFOPLIST_FILE = DailyDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.patryksolinski.DailyDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X53XBAVA4P;
 				INFOPLIST_FILE = DailyDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.patryksolinski.DailyDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
