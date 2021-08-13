@@ -1,5 +1,5 @@
 //
-//  FirstTabVC.swift
+//  WelcomeTabVC.swift
 //  DailyDo
 //
 //  Created by Patryk Soliński on 09/07/2021.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class firstTabViewControler: UIViewController {
+class WelcomeViewControler: UIViewController {
     
     
     @IBOutlet weak var tabBarItems: UITabBarItem!

@@ -1,0 +1,17 @@
+
+Jak sama nazwa wskazuje MVC składa się z trzech komponentów:
+
+– Controller – element, który łączy warstwę Model oraz warstwę View. Controller nie powinien znać konkretnej implementacji Widoku (View), z którym będzie współpracował. Zamiast tego powinien komunikować się z jego abstrakcją za pomocą interfejsu.
+
+– Model – warstwa, w której umieszczamy dane. W tej warstwie będziemy umieszczali nasze modele, kod odpowiedzialny za współpracę z bazą danych lub zdalnym serwerem.
+
+– View – warstwa, którą można traktować jako front naszej aplikacji. Założenie jest takie, że powinna ona być tak bierna jak to tylko możliwe. Przykładem obiektu należącego do tej warstwy jest choćby każdy obiekt dziedziczący po UIView.
+
+
+
+https://www.youtube.com/watch?v=64VZSu9bM9E
+
+https://medium.com/fabcoding/curved-tabbar-with-a-round-middle-button-swift-6f2f10aff8bd
+
+https://iosexample.com/a-easy-to-use-tab-bar-navigation-controller-for-ios/
+

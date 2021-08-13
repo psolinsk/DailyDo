@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DNq-Vd-FNz">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--trst-->
+        <scene sceneID="keB-6v-Wqy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayx-A7-jXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="DNq-Vd-FNz" customClass="KanBanViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="trst" largeTitleDisplayMode="never" id="EjK-Be-GIj"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1657" y="109"/>
+        </scene>
+        <!--Kan Ban Navigation Controller-->
+        <scene sceneID="gIC-V9-228">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSy-zU-HrV" customClass="KanBanNavigationController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="Qpw-Xk-kSp">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DNq-Vd-FNz" kind="relationship" relationship="rootViewController" id="Bm5-v0-aFb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZS-Tv-LkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679.71014492753625" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>

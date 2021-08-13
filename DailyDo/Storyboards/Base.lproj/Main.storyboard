@@ -7,16 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FirstTab-->
-        <scene sceneID="GPr-tF-RBZ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="FirstTab" id="Kru-WO-x4t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="f3R-u7-IpJ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mbs-ao-cd3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-630" y="538"/>
-        </scene>
         <!--ToDoList-->
         <scene sceneID="KJn-Hq-KzW">
             <objects>
@@ -25,7 +15,37 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hI-XF-Kdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="549"/>
+            <point key="canvasLocation" x="-580" y="520"/>
+        </scene>
+        <!--Space-->
+        <scene sceneID="dw6-zC-2kC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Space" id="c3a-v1-RMD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uMU-eB-ZCF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSW-L1-s9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="520"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="IaB-Uf-omr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Welcome" id="0sp-pW-58U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9RI-w3-JuR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="483-in-n5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="520"/>
+        </scene>
+        <!--AddTask-->
+        <scene sceneID="7cT-dk-YKK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTask" id="eXa-Df-qRi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="nSt-dm-gkv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MoO-ll-bNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="520"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Opy-Fr-bMf">
@@ -35,21 +55,28 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iM4-hn-AfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320" y="531"/>
+            <point key="canvasLocation" x="149" y="520"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar-->
         <scene sceneID="7Ed-8m-JYM">
             <objects>
-                <tabBarController id="24r-gA-cr9" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fgS-df-fRn">
+                <tabBarController id="24r-gA-cr9" customClass="mainTabBar" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="fgS-df-fRn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="Kru-WO-x4t" kind="relationship" relationship="viewControllers" id="xss-Bn-gel"/>
                         <segue destination="nfQ-uO-Q1R" kind="relationship" relationship="viewControllers" id="37E-LP-pQQ"/>
+                        <segue destination="c3a-v1-RMD" kind="relationship" relationship="viewControllers" id="2qf-Fc-kW9"/>
+                        <segue destination="0sp-pW-58U" kind="relationship" relationship="viewControllers" id="UlS-n8-SXK"/>
+                        <segue destination="eXa-Df-qRi" kind="relationship" relationship="viewControllers" id="B9p-fj-Xch"/>
                         <segue destination="8xR-hi-fgo" kind="relationship" relationship="viewControllers" id="ea8-XN-wpZ"/>
                     </connections>
                 </tabBarController>
