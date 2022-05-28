@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24r-gA-cr9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24r-gA-cr9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ToDoList-->
-        <scene sceneID="KJn-Hq-KzW">
+        <!--ToDoToday-->
+        <scene sceneID="zM4-Zx-Id1">
             <objects>
-                <viewControllerPlaceholder storyboardName="ToDoList" id="nfQ-uO-Q1R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Pro-I1-aBg"/>
+                <viewControllerPlaceholder storyboardName="ToDoToday" id="lh3-7a-Woq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ToDo Today" image="checkmark.circle" catalog="system" id="Lio-x1-hhz"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4hI-XF-Kdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivh-ms-hO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="520"/>
+            <point key="canvasLocation" x="-575" y="520"/>
         </scene>
         <!--Space-->
         <scene sceneID="dw6-zC-2kC">
             <objects>
                 <viewControllerPlaceholder storyboardName="Space" id="c3a-v1-RMD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uMU-eB-ZCF"/>
+                    <tabBarItem key="tabBarItem" title="Space" id="uMU-eB-ZCF"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSW-L1-s9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,7 +32,9 @@
         <scene sceneID="IaB-Uf-omr">
             <objects>
                 <viewControllerPlaceholder storyboardName="Welcome" id="0sp-pW-58U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9RI-w3-JuR"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="9RI-w3-JuR">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="483-in-n5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +44,7 @@
         <scene sceneID="7cT-dk-YKK">
             <objects>
                 <viewControllerPlaceholder storyboardName="AddTask" id="eXa-Df-qRi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nSt-dm-gkv"/>
+                    <tabBarItem key="tabBarItem" title="Add Task" image="plus.square.on.square" catalog="system" id="nSt-dm-gkv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MoO-ll-bNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +54,7 @@
         <scene sceneID="Opy-Fr-bMf">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="8xR-hi-fgo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ic7-Zb-74Z"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="Ic7-Zb-74Z"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iM4-hn-AfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,6 +69,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
@@ -73,7 +77,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="nfQ-uO-Q1R" kind="relationship" relationship="viewControllers" id="37E-LP-pQQ"/>
+                        <segue destination="lh3-7a-Woq" kind="relationship" relationship="viewControllers" id="IwL-iF-b8Z"/>
                         <segue destination="c3a-v1-RMD" kind="relationship" relationship="viewControllers" id="2qf-Fc-kW9"/>
                         <segue destination="0sp-pW-58U" kind="relationship" relationship="viewControllers" id="UlS-n8-SXK"/>
                         <segue destination="eXa-Df-qRi" kind="relationship" relationship="viewControllers" id="B9p-fj-Xch"/>
@@ -86,6 +90,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.square.on.square" catalog="system" width="128" height="113"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

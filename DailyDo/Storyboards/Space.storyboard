@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WcZ-2L-xH4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WcZ-2L-xH4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,52 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KF-hp-NOa">
-                                <rect key="frame" x="184" y="277" width="46" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="LZy-q4-9TY"/>
-                                    <constraint firstAttribute="height" constant="50" id="yyH-mk-RB6"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Xfg-vH-s2c" kind="show" id="FLG-3g-IaW"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="3KF-hp-NOa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="277" id="73v-hU-6jG"/>
-                            <constraint firstItem="3KF-hp-NOa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="S6n-aY-IXF"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Space" id="yhM-g6-5sm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="Button" destination="3KF-hp-NOa" id="t0N-CU-3jM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="873.91304347826099" y="109.82142857142857"/>
         </scene>
-        <!--KanBan-->
-        <scene sceneID="dX3-07-T86">
-            <objects>
-                <viewControllerPlaceholder storyboardName="KanBan" id="Xfg-vH-s2c" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="oJT-Bh-ypc"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVx-AC-rLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1787" y="110"/>
-        </scene>
         <!--Space-->
         <scene sceneID="le8-rW-rcr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WcZ-2L-xH4" customClass="SpaceNavigationController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Space" image="folder.fill" catalog="system" id="kC3-JR-s7Z"/>
+                    <tabBarItem key="tabBarItem" title="Space" image="folder" catalog="system" selectedImage="folder.fill" id="6rY-ud-jVH"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="WOC-Yr-jjQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -79,6 +51,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

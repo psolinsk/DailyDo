@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pIj-0f-Rny">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pIj-0f-Rny">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,12 +26,13 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="76.339285714285708"/>
         </scene>
-        <!--Welcome-->
+        <!--Welcome Navigation Controller-->
         <scene sceneID="nMf-0h-A0k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pIj-0f-Rny" customClass="WelcomeNavigationController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Welcome" image="circle.grid.hex.fill" catalog="system" id="dv0-zL-iXv"/>
+                    <tabBarItem key="tabBarItem" title="" image="circle.hexagongrid" catalog="system" selectedImage="circle.hexagongrid.fill" id="mvV-uE-nJJ"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="MZ0-qk-d9j">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,7 +48,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.hex.fill" catalog="system" width="128" height="112"/>
+        <image name="circle.hexagongrid" catalog="system" width="128" height="112"/>
+        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

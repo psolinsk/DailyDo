@@ -11,7 +11,6 @@
 		2D09996026C5B93E00834CA9 /* Private_Info in Resources */ = {isa = PBXBuildFile; fileRef = 2D09995F26C5B93E00834CA9 /* Private_Info */; };
 		2D09996326C5C11300834CA9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D09996226C5C11300834CA9 /* Colors.swift */; };
 		2D2E787626C5C53B00BF7D6A /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E787526C5C53B00BF7D6A /* Welcome.storyboard */; };
-		2D2E787826C5C59400BF7D6A /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E787726C5C59400BF7D6A /* WelcomeVC.swift */; };
 		2D35291C26C5B51500CB9CBE /* info in Resources */ = {isa = PBXBuildFile; fileRef = 2D35291B26C5B51500CB9CBE /* info */; };
 		2D37E50F26985634000D8C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E50E26985634000D8C20 /* AppDelegate.swift */; };
 		2D37E51126985634000D8C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E51026985634000D8C20 /* SceneDelegate.swift */; };
@@ -21,21 +20,19 @@
 		2D37E52626985636000D8C20 /* DailyDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E52526985636000D8C20 /* DailyDoTests.swift */; };
 		2D37E53126985636000D8C20 /* DailyDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E53026985636000D8C20 /* DailyDoUITests.swift */; };
 		2D43E5D62698FA6B005E8172 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5D52698FA6B005E8172 /* Settings.storyboard */; };
-		2D43E5DA26990440005E8172 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5D926990440005E8172 /* SettingsVC.swift */; };
-		2D43E5DC26991253005E8172 /* ToDoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5DB26991253005E8172 /* ToDoList.storyboard */; };
-		2D43E5DE269912DF005E8172 /* ToDoTodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5DD269912DF005E8172 /* ToDoTodayVC.swift */; };
+		2D43E5DA26990440005E8172 /* SettingsNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5D926990440005E8172 /* SettingsNC.swift */; };
+		2D43E5DC26991253005E8172 /* ToDoToday.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5DB26991253005E8172 /* ToDoToday.storyboard */; };
 		2D6BEDBC2699B24A00ED33E9 /* UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6BEDBB2699B24A00ED33E9 /* UITabBar.swift */; };
 		2D6BEDBE2699B64F00ED33E9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6BEDBD2699B64F00ED33E9 /* MainTabBar.swift */; };
+		2DBC38B927EF5E340074BD14 /* ToDoTodayNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38B827EF5E340074BD14 /* ToDoTodayNC.swift */; };
+		2DBC38C027EF85E40074BD14 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */; };
+		2DBC38C327EF88FC0074BD14 /* ToDoTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38C227EF88FC0074BD14 /* ToDoTodayViewController.swift */; };
 		2DFB4DCE26C5C8B9000EA20F /* Space.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DCD26C5C8B9000EA20F /* Space.storyboard */; };
-		2DFB4DD026C5C8FE000EA20F /* SpaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DCF26C5C8FE000EA20F /* SpaceVC.swift */; };
 		2DFB4DD226C5CB73000EA20F /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */; };
-		2DFB4DD426C5CBEA000EA20F /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD326C5CBEA000EA20F /* AddTaskVC.swift */; };
+		2DFB4DD426C5CBEA000EA20F /* AddTaskNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD326C5CBEA000EA20F /* AddTaskNC.swift */; };
 		2DFB4DD626C5CD91000EA20F /* UIView Apperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD526C5CD91000EA20F /* UIView Apperance.swift */; };
-		2DFB4DD826C64E14000EA20F /* KanBanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD726C64E14000EA20F /* KanBanVC.swift */; };
-		2DFB4DDA26C64E23000EA20F /* KanBan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD926C64E23000EA20F /* KanBan.storyboard */; };
-		2DFB4DDD26C6608F000EA20F /* SpaceNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DDC26C6608F000EA20F /* SpaceNavigationController.swift */; };
-		2DFB4DE426C6653B000EA20F /* KanBanNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DE326C6653B000EA20F /* KanBanNavigationController.swift */; };
-		2DFB4DE626C666E9000EA20F /* WelcomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DE526C666E9000EA20F /* WelcomeNavigationController.swift */; };
+		2DFB4DDD26C6608F000EA20F /* SpaceNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DDC26C6608F000EA20F /* SpaceNC.swift */; };
+		2DFB4DE626C666E9000EA20F /* WelcomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DE526C666E9000EA20F /* WelcomeNC.swift */; };
 		2DFB4DE926C669D1000EA20F /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DE826C669D1000EA20F /* Board.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +58,6 @@
 		2D09995F26C5B93E00834CA9 /* Private_Info */ = {isa = PBXFileReference; lastKnownFileType = text; path = Private_Info; sourceTree = "<group>"; };
 		2D09996226C5C11300834CA9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2D2E787526C5C53B00BF7D6A /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
-		2D2E787726C5C59400BF7D6A /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		2D35291B26C5B51500CB9CBE /* info */ = {isa = PBXFileReference; lastKnownFileType = text; path = info; sourceTree = "<group>"; };
 		2D37E50B26985634000D8C20 /* DailyDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D37E50E26985634000D8C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,21 +73,19 @@
 		2D37E53026985636000D8C20 /* DailyDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDoUITests.swift; sourceTree = "<group>"; };
 		2D37E53226985636000D8C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D43E5D52698FA6B005E8172 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		2D43E5D926990440005E8172 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		2D43E5DB26991253005E8172 /* ToDoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoList.storyboard; sourceTree = "<group>"; };
-		2D43E5DD269912DF005E8172 /* ToDoTodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTodayVC.swift; sourceTree = "<group>"; };
+		2D43E5D926990440005E8172 /* SettingsNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNC.swift; sourceTree = "<group>"; };
+		2D43E5DB26991253005E8172 /* ToDoToday.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoToday.storyboard; sourceTree = "<group>"; };
 		2D6BEDBB2699B24A00ED33E9 /* UITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBar.swift; sourceTree = "<group>"; };
 		2D6BEDBD2699B64F00ED33E9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		2DBC38B827EF5E340074BD14 /* ToDoTodayNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTodayNC.swift; sourceTree = "<group>"; };
+		2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2DBC38C227EF88FC0074BD14 /* ToDoTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTodayViewController.swift; sourceTree = "<group>"; };
 		2DFB4DCD26C5C8B9000EA20F /* Space.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Space.storyboard; sourceTree = "<group>"; };
-		2DFB4DCF26C5C8FE000EA20F /* SpaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceVC.swift; sourceTree = "<group>"; };
 		2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
-		2DFB4DD326C5CBEA000EA20F /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		2DFB4DD326C5CBEA000EA20F /* AddTaskNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskNC.swift; sourceTree = "<group>"; };
 		2DFB4DD526C5CD91000EA20F /* UIView Apperance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Apperance.swift"; sourceTree = "<group>"; };
-		2DFB4DD726C64E14000EA20F /* KanBanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanBanVC.swift; sourceTree = "<group>"; };
-		2DFB4DD926C64E23000EA20F /* KanBan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KanBan.storyboard; sourceTree = "<group>"; };
-		2DFB4DDC26C6608F000EA20F /* SpaceNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNavigationController.swift; sourceTree = "<group>"; };
-		2DFB4DE326C6653B000EA20F /* KanBanNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanBanNavigationController.swift; sourceTree = "<group>"; };
-		2DFB4DE526C666E9000EA20F /* WelcomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavigationController.swift; sourceTree = "<group>"; };
+		2DFB4DDC26C6608F000EA20F /* SpaceNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNC.swift; sourceTree = "<group>"; };
+		2DFB4DE526C666E9000EA20F /* WelcomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNC.swift; sourceTree = "<group>"; };
 		2DFB4DE826C669D1000EA20F /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,11 +201,10 @@
 			children = (
 				2D37E51426985634000D8C20 /* Main.storyboard */,
 				2D43E5D52698FA6B005E8172 /* Settings.storyboard */,
-				2D43E5DB26991253005E8172 /* ToDoList.storyboard */,
+				2D43E5DB26991253005E8172 /* ToDoToday.storyboard */,
 				2D2E787526C5C53B00BF7D6A /* Welcome.storyboard */,
 				2DFB4DCD26C5C8B9000EA20F /* Space.storyboard */,
 				2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */,
-				2DFB4DD926C64E23000EA20F /* KanBan.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -224,7 +217,6 @@
 				2DFB4DE026C66315000EA20F /* ToDoToday */,
 				2DFB4DDF26C66307000EA20F /* Settings */,
 				2DFB4DDE26C662FD000EA20F /* Welcome */,
-				2DFB4DEE26C687F5000EA20F /* KanBan */,
 				2DFB4DDB26C6606E000EA20F /* Space */,
 			);
 			path = "View Controller";
@@ -239,11 +231,26 @@
 			path = ViewExtentions;
 			sourceTree = "<group>";
 		};
+		2DBC38BE27EF85CD0074BD14 /* Apperance */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */,
+			);
+			path = Apperance;
+			sourceTree = "<group>";
+		};
+		2DBC38C127EF88E70074BD14 /* Appeance */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC38C227EF88FC0074BD14 /* ToDoTodayViewController.swift */,
+			);
+			path = Appeance;
+			sourceTree = "<group>";
+		};
 		2DFB4DDB26C6606E000EA20F /* Space */ = {
 			isa = PBXGroup;
 			children = (
-				2DFB4DCF26C5C8FE000EA20F /* SpaceVC.swift */,
-				2DFB4DDC26C6608F000EA20F /* SpaceNavigationController.swift */,
+				2DFB4DDC26C6608F000EA20F /* SpaceNC.swift */,
 			);
 			path = Space;
 			sourceTree = "<group>";
@@ -251,8 +258,8 @@
 		2DFB4DDE26C662FD000EA20F /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				2D2E787726C5C59400BF7D6A /* WelcomeVC.swift */,
-				2DFB4DE526C666E9000EA20F /* WelcomeNavigationController.swift */,
+				2DBC38BE27EF85CD0074BD14 /* Apperance */,
+				2DFB4DE526C666E9000EA20F /* WelcomeNC.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -260,7 +267,7 @@
 		2DFB4DDF26C66307000EA20F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				2D43E5D926990440005E8172 /* SettingsVC.swift */,
+				2D43E5D926990440005E8172 /* SettingsNC.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -268,7 +275,8 @@
 		2DFB4DE026C66315000EA20F /* ToDoToday */ = {
 			isa = PBXGroup;
 			children = (
-				2D43E5DD269912DF005E8172 /* ToDoTodayVC.swift */,
+				2DBC38C127EF88E70074BD14 /* Appeance */,
+				2DBC38B827EF5E340074BD14 /* ToDoTodayNC.swift */,
 			);
 			path = ToDoToday;
 			sourceTree = "<group>";
@@ -284,7 +292,7 @@
 		2DFB4DE226C6633B000EA20F /* AddTask */ = {
 			isa = PBXGroup;
 			children = (
-				2DFB4DD326C5CBEA000EA20F /* AddTaskVC.swift */,
+				2DFB4DD326C5CBEA000EA20F /* AddTaskNC.swift */,
 			);
 			path = AddTask;
 			sourceTree = "<group>";
@@ -293,23 +301,6 @@
 			isa = PBXGroup;
 			children = (
 				2DFB4DE826C669D1000EA20F /* Board.swift */,
-			);
-			path = Board;
-			sourceTree = "<group>";
-		};
-		2DFB4DEE26C687F5000EA20F /* KanBan */ = {
-			isa = PBXGroup;
-			children = (
-				2DFB4DEF26C68807000EA20F /* Board */,
-				2DFB4DD726C64E14000EA20F /* KanBanVC.swift */,
-				2DFB4DE326C6653B000EA20F /* KanBanNavigationController.swift */,
-			);
-			path = KanBan;
-			sourceTree = "<group>";
-		};
-		2DFB4DEF26C68807000EA20F /* Board */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -419,12 +410,11 @@
 			files = (
 				2DFB4DCE26C5C8B9000EA20F /* Space.storyboard in Resources */,
 				2D09996026C5B93E00834CA9 /* Private_Info in Resources */,
-				2D43E5DC26991253005E8172 /* ToDoList.storyboard in Resources */,
+				2D43E5DC26991253005E8172 /* ToDoToday.storyboard in Resources */,
 				2D37E51B26985636000D8C20 /* LaunchScreen.storyboard in Resources */,
 				2D35291C26C5B51500CB9CBE /* info in Resources */,
 				2D37E51826985636000D8C20 /* Assets.xcassets in Resources */,
 				2D2E787626C5C53B00BF7D6A /* Welcome.storyboard in Resources */,
-				2DFB4DDA26C64E23000EA20F /* KanBan.storyboard in Resources */,
 				2D37E51626985634000D8C20 /* Main.storyboard in Resources */,
 				2D09995E26C5B83500834CA9 /* README.md in Resources */,
 				2D43E5D62698FA6B005E8172 /* Settings.storyboard in Resources */,
@@ -454,21 +444,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D37E50F26985634000D8C20 /* AppDelegate.swift in Sources */,
+				2DBC38B927EF5E340074BD14 /* ToDoTodayNC.swift in Sources */,
 				2DFB4DD626C5CD91000EA20F /* UIView Apperance.swift in Sources */,
-				2DFB4DD826C64E14000EA20F /* KanBanVC.swift in Sources */,
-				2DFB4DD026C5C8FE000EA20F /* SpaceVC.swift in Sources */,
-				2DFB4DE626C666E9000EA20F /* WelcomeNavigationController.swift in Sources */,
+				2DFB4DE626C666E9000EA20F /* WelcomeNC.swift in Sources */,
 				2D09996326C5C11300834CA9 /* Colors.swift in Sources */,
-				2DFB4DD426C5CBEA000EA20F /* AddTaskVC.swift in Sources */,
-				2D43E5DE269912DF005E8172 /* ToDoTodayVC.swift in Sources */,
+				2DFB4DD426C5CBEA000EA20F /* AddTaskNC.swift in Sources */,
+				2DBC38C027EF85E40074BD14 /* WelcomeViewController.swift in Sources */,
 				2D6BEDBE2699B64F00ED33E9 /* MainTabBar.swift in Sources */,
-				2D43E5DA26990440005E8172 /* SettingsVC.swift in Sources */,
-				2DFB4DDD26C6608F000EA20F /* SpaceNavigationController.swift in Sources */,
-				2DFB4DE426C6653B000EA20F /* KanBanNavigationController.swift in Sources */,
+				2D43E5DA26990440005E8172 /* SettingsNC.swift in Sources */,
+				2DFB4DDD26C6608F000EA20F /* SpaceNC.swift in Sources */,
 				2D6BEDBC2699B24A00ED33E9 /* UITabBar.swift in Sources */,
 				2D37E51126985634000D8C20 /* SceneDelegate.swift in Sources */,
+				2DBC38C327EF88FC0074BD14 /* ToDoTodayViewController.swift in Sources */,
 				2DFB4DE926C669D1000EA20F /* Board.swift in Sources */,
-				2D2E787826C5C59400BF7D6A /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
