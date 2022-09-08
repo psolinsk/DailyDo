@@ -9,18 +9,77 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Space-->
+        <!--Spaces-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="SpaceViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJI-yR-c9U">
+                                <rect key="frame" x="-20" y="0.0" width="471" height="693"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7nd-WZ-sDx">
+                                        <rect key="frame" x="28" y="0.0" width="398" height="693"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="dZg-tm-TS3" customClass="SpaceTableViewCell" customModule="DailyDo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="398" height="43"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dZg-tm-TS3" id="DOh-x3-LKZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-uu-MoY">
+                                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Sj0-uu-MoY" firstAttribute="top" secondItem="DOh-x3-LKZ" secondAttribute="topMargin" id="4Kt-Ls-ptg"/>
+                                                        <constraint firstItem="Sj0-uu-MoY" firstAttribute="centerY" secondItem="DOh-x3-LKZ" secondAttribute="centerY" id="MPu-bY-UUV"/>
+                                                        <constraint firstItem="Sj0-uu-MoY" firstAttribute="leading" secondItem="DOh-x3-LKZ" secondAttribute="leadingMargin" id="vPU-bT-StW"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="label" destination="Sj0-uu-MoY" id="fgy-Iy-0kW"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7nd-WZ-sDx" firstAttribute="leading" secondItem="nJI-yR-c9U" secondAttribute="leading" constant="28" id="BLe-lb-ehE"/>
+                                    <constraint firstItem="7nd-WZ-sDx" firstAttribute="centerY" secondItem="nJI-yR-c9U" secondAttribute="centerY" id="cBJ-tx-Cpm"/>
+                                    <constraint firstItem="7nd-WZ-sDx" firstAttribute="centerX" secondItem="nJI-yR-c9U" secondAttribute="centerX" constant="-8.5" id="caP-HW-cUS"/>
+                                    <constraint firstItem="7nd-WZ-sDx" firstAttribute="top" secondItem="nJI-yR-c9U" secondAttribute="top" id="xRm-S3-nv2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nJI-yR-c9U" secondAttribute="bottom" constant="32" id="14q-FC-0Cv"/>
+                            <constraint firstItem="nJI-yR-c9U" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JDo-0j-BMs"/>
+                            <constraint firstItem="nJI-yR-c9U" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="-40" id="iaa-dg-rei"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nJI-yR-c9U" secondAttribute="trailing" constant="-57" id="r7C-li-hlO"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Space" id="yhM-g6-5sm"/>
+                    <navigationItem key="navigationItem" title="Spaces" id="yhM-g6-5sm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="Bnj-od-8Z5">
+                            <connections>
+                                <action selector="AddSpaceButton:" destination="Ief-a0-LHa" id="yTf-jw-1Oc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="spaceTableView" destination="7nd-WZ-sDx" id="Dba-KN-ZsQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

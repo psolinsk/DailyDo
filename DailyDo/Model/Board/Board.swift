@@ -16,3 +16,5 @@ class Board: Codable {
         self.items = items
     }
 }
+
+// TODO: WTF is that?

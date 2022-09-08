@@ -12,5 +12,6 @@ class SpaceNavigationController:UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIBarButtonItem.appearance().tintColor = Colors.orangeMain
     }
 }

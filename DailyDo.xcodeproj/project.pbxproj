@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D09995E26C5B83500834CA9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D09995D26C5B83500834CA9 /* README.md */; };
-		2D09996026C5B93E00834CA9 /* Private_Info in Resources */ = {isa = PBXBuildFile; fileRef = 2D09995F26C5B93E00834CA9 /* Private_Info */; };
 		2D09996326C5C11300834CA9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D09996226C5C11300834CA9 /* Colors.swift */; };
 		2D2E787626C5C53B00BF7D6A /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E787526C5C53B00BF7D6A /* Welcome.storyboard */; };
 		2D35291C26C5B51500CB9CBE /* info in Resources */ = {isa = PBXBuildFile; fileRef = 2D35291B26C5B51500CB9CBE /* info */; };
@@ -19,10 +18,13 @@
 		2D37E51B26985636000D8C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D37E51926985636000D8C20 /* LaunchScreen.storyboard */; };
 		2D37E52626985636000D8C20 /* DailyDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E52526985636000D8C20 /* DailyDoTests.swift */; };
 		2D37E53126985636000D8C20 /* DailyDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37E53026985636000D8C20 /* DailyDoUITests.swift */; };
+		2D3DED9928BA487000CE81E6 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DED9828BA487000CE81E6 /* SpaceViewController.swift */; };
+		2D3DED9B28BA7E6F00CE81E6 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DED9A28BA7E6F00CE81E6 /* GlobalValues.swift */; };
 		2D43E5D62698FA6B005E8172 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5D52698FA6B005E8172 /* Settings.storyboard */; };
 		2D43E5DA26990440005E8172 /* SettingsNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D43E5D926990440005E8172 /* SettingsNC.swift */; };
 		2D43E5DC26991253005E8172 /* ToDoToday.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D43E5DB26991253005E8172 /* ToDoToday.storyboard */; };
-		2D6BEDBC2699B24A00ED33E9 /* UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6BEDBB2699B24A00ED33E9 /* UITabBar.swift */; };
+		2D56662D28CA2D8900760D55 /* SpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56662C28CA2D8900760D55 /* SpaceTableViewCell.swift */; };
+		2D56662F28CA694400760D55 /* Ideas in Resources */ = {isa = PBXBuildFile; fileRef = 2D56662E28CA694400760D55 /* Ideas */; };
 		2D6BEDBE2699B64F00ED33E9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6BEDBD2699B64F00ED33E9 /* MainTabBar.swift */; };
 		2DBC38B927EF5E340074BD14 /* ToDoTodayNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38B827EF5E340074BD14 /* ToDoTodayNC.swift */; };
 		2DBC38C027EF85E40074BD14 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */; };
@@ -33,7 +35,6 @@
 		2DFB4DD626C5CD91000EA20F /* UIView Apperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD526C5CD91000EA20F /* UIView Apperance.swift */; };
 		2DFB4DDD26C6608F000EA20F /* SpaceNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DDC26C6608F000EA20F /* SpaceNC.swift */; };
 		2DFB4DE626C666E9000EA20F /* WelcomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DE526C666E9000EA20F /* WelcomeNC.swift */; };
-		2DFB4DE926C669D1000EA20F /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB4DE826C669D1000EA20F /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		2D09995D26C5B83500834CA9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2D09995F26C5B93E00834CA9 /* Private_Info */ = {isa = PBXFileReference; lastKnownFileType = text; path = Private_Info; sourceTree = "<group>"; };
 		2D09996226C5C11300834CA9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2D2E787526C5C53B00BF7D6A /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		2D35291B26C5B51500CB9CBE /* info */ = {isa = PBXFileReference; lastKnownFileType = text; path = info; sourceTree = "<group>"; };
@@ -72,10 +72,13 @@
 		2D37E52C26985636000D8C20 /* DailyDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D37E53026985636000D8C20 /* DailyDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDoUITests.swift; sourceTree = "<group>"; };
 		2D37E53226985636000D8C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3DED9828BA487000CE81E6 /* SpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
+		2D3DED9A28BA7E6F00CE81E6 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
 		2D43E5D52698FA6B005E8172 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		2D43E5D926990440005E8172 /* SettingsNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNC.swift; sourceTree = "<group>"; };
 		2D43E5DB26991253005E8172 /* ToDoToday.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoToday.storyboard; sourceTree = "<group>"; };
-		2D6BEDBB2699B24A00ED33E9 /* UITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBar.swift; sourceTree = "<group>"; };
+		2D56662C28CA2D8900760D55 /* SpaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTableViewCell.swift; sourceTree = "<group>"; };
+		2D56662E28CA694400760D55 /* Ideas */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ideas; sourceTree = "<group>"; };
 		2D6BEDBD2699B64F00ED33E9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		2DBC38B827EF5E340074BD14 /* ToDoTodayNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTodayNC.swift; sourceTree = "<group>"; };
 		2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +89,6 @@
 		2DFB4DD526C5CD91000EA20F /* UIView Apperance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Apperance.swift"; sourceTree = "<group>"; };
 		2DFB4DDC26C6608F000EA20F /* SpaceNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNC.swift; sourceTree = "<group>"; };
 		2DFB4DE526C666E9000EA20F /* WelcomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNC.swift; sourceTree = "<group>"; };
-		2DFB4DE826C669D1000EA20F /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,9 @@
 		2D09996126C5C05C00834CA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D56662A28CA29AF00760D55 /* ToDoToday */,
+				2D56662928CA299A00760D55 /* Welcome */,
+				2D56662828CA298C00760D55 /* Space */,
 				2D6BEDBA2699B22B00ED33E9 /* ViewExtentions */,
 			);
 			path = View;
@@ -125,7 +130,7 @@
 		2D35291926C5B2A300CB9CBE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2DFB4DE726C669BF000EA20F /* Board */,
+				2D56662B28CA2D4600760D55 /* SpaceCell */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,7 +138,6 @@
 		2D35291A26C5B4E100CB9CBE /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				2D35291B26C5B51500CB9CBE /* info */,
 				2D09996226C5C11300834CA9 /* Colors.swift */,
 			);
 			path = Constants;
@@ -142,7 +146,8 @@
 		2D37E50226985634000D8C20 = {
 			isa = PBXGroup;
 			children = (
-				2D09995F26C5B93E00834CA9 /* Private_Info */,
+				2D56662E28CA694400760D55 /* Ideas */,
+				2D35291B26C5B51500CB9CBE /* info */,
 				2D09995D26C5B83500834CA9 /* README.md */,
 				2D37E50D26985634000D8C20 /* DailyDo */,
 				2D37E52426985636000D8C20 /* DailyDoTests */,
@@ -166,13 +171,13 @@
 			children = (
 				2D37E50E26985634000D8C20 /* AppDelegate.swift */,
 				2D37E51026985634000D8C20 /* SceneDelegate.swift */,
+				2D3DED9A28BA7E6F00CE81E6 /* GlobalValues.swift */,
+				2D35291A26C5B4E100CB9CBE /* Constants */,
 				2D35291926C5B2A300CB9CBE /* Model */,
 				2D09996126C5C05C00834CA9 /* View */,
-				2D6BEDB72699ADC100ED33E9 /* View Controller */,
+				2D6BEDB72699ADC100ED33E9 /* Controller */,
 				2D43E5D22698F79E005E8172 /* Storyboards */,
-				2D35291A26C5B4E100CB9CBE /* Constants */,
 				2D37E51726985636000D8C20 /* Assets.xcassets */,
-				2D37E51926985636000D8C20 /* LaunchScreen.storyboard */,
 				2D37E51C26985636000D8C20 /* Info.plist */,
 			);
 			path = DailyDo;
@@ -205,11 +210,44 @@
 				2D2E787526C5C53B00BF7D6A /* Welcome.storyboard */,
 				2DFB4DCD26C5C8B9000EA20F /* Space.storyboard */,
 				2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */,
+				2D37E51926985636000D8C20 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		2D6BEDB72699ADC100ED33E9 /* View Controller */ = {
+		2D56662828CA298C00760D55 /* Space */ = {
+			isa = PBXGroup;
+			children = (
+				2D3DED9828BA487000CE81E6 /* SpaceViewController.swift */,
+			);
+			path = Space;
+			sourceTree = "<group>";
+		};
+		2D56662928CA299A00760D55 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		2D56662A28CA29AF00760D55 /* ToDoToday */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC38C227EF88FC0074BD14 /* ToDoTodayViewController.swift */,
+			);
+			path = ToDoToday;
+			sourceTree = "<group>";
+		};
+		2D56662B28CA2D4600760D55 /* SpaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D56662C28CA2D8900760D55 /* SpaceTableViewCell.swift */,
+			);
+			path = SpaceCell;
+			sourceTree = "<group>";
+		};
+		2D6BEDB72699ADC100ED33E9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				2DFB4DE226C6633B000EA20F /* AddTask */,
@@ -219,32 +257,15 @@
 				2DFB4DDE26C662FD000EA20F /* Welcome */,
 				2DFB4DDB26C6606E000EA20F /* Space */,
 			);
-			path = "View Controller";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		2D6BEDBA2699B22B00ED33E9 /* ViewExtentions */ = {
 			isa = PBXGroup;
 			children = (
-				2D6BEDBB2699B24A00ED33E9 /* UITabBar.swift */,
 				2DFB4DD526C5CD91000EA20F /* UIView Apperance.swift */,
 			);
 			path = ViewExtentions;
-			sourceTree = "<group>";
-		};
-		2DBC38BE27EF85CD0074BD14 /* Apperance */ = {
-			isa = PBXGroup;
-			children = (
-				2DBC38BF27EF85E40074BD14 /* WelcomeViewController.swift */,
-			);
-			path = Apperance;
-			sourceTree = "<group>";
-		};
-		2DBC38C127EF88E70074BD14 /* Appeance */ = {
-			isa = PBXGroup;
-			children = (
-				2DBC38C227EF88FC0074BD14 /* ToDoTodayViewController.swift */,
-			);
-			path = Appeance;
 			sourceTree = "<group>";
 		};
 		2DFB4DDB26C6606E000EA20F /* Space */ = {
@@ -258,7 +279,6 @@
 		2DFB4DDE26C662FD000EA20F /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				2DBC38BE27EF85CD0074BD14 /* Apperance */,
 				2DFB4DE526C666E9000EA20F /* WelcomeNC.swift */,
 			);
 			path = Welcome;
@@ -275,7 +295,6 @@
 		2DFB4DE026C66315000EA20F /* ToDoToday */ = {
 			isa = PBXGroup;
 			children = (
-				2DBC38C127EF88E70074BD14 /* Appeance */,
 				2DBC38B827EF5E340074BD14 /* ToDoTodayNC.swift */,
 			);
 			path = ToDoToday;
@@ -295,14 +314,6 @@
 				2DFB4DD326C5CBEA000EA20F /* AddTaskNC.swift */,
 			);
 			path = AddTask;
-			sourceTree = "<group>";
-		};
-		2DFB4DE726C669BF000EA20F /* Board */ = {
-			isa = PBXGroup;
-			children = (
-				2DFB4DE826C669D1000EA20F /* Board.swift */,
-			);
-			path = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,8 +420,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DFB4DCE26C5C8B9000EA20F /* Space.storyboard in Resources */,
-				2D09996026C5B93E00834CA9 /* Private_Info in Resources */,
 				2D43E5DC26991253005E8172 /* ToDoToday.storyboard in Resources */,
+				2D56662F28CA694400760D55 /* Ideas in Resources */,
 				2D37E51B26985636000D8C20 /* LaunchScreen.storyboard in Resources */,
 				2D35291C26C5B51500CB9CBE /* info in Resources */,
 				2D37E51826985636000D8C20 /* Assets.xcassets in Resources */,
@@ -443,20 +454,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3DED9928BA487000CE81E6 /* SpaceViewController.swift in Sources */,
 				2D37E50F26985634000D8C20 /* AppDelegate.swift in Sources */,
 				2DBC38B927EF5E340074BD14 /* ToDoTodayNC.swift in Sources */,
 				2DFB4DD626C5CD91000EA20F /* UIView Apperance.swift in Sources */,
 				2DFB4DE626C666E9000EA20F /* WelcomeNC.swift in Sources */,
 				2D09996326C5C11300834CA9 /* Colors.swift in Sources */,
 				2DFB4DD426C5CBEA000EA20F /* AddTaskNC.swift in Sources */,
+				2D56662D28CA2D8900760D55 /* SpaceTableViewCell.swift in Sources */,
 				2DBC38C027EF85E40074BD14 /* WelcomeViewController.swift in Sources */,
 				2D6BEDBE2699B64F00ED33E9 /* MainTabBar.swift in Sources */,
 				2D43E5DA26990440005E8172 /* SettingsNC.swift in Sources */,
 				2DFB4DDD26C6608F000EA20F /* SpaceNC.swift in Sources */,
-				2D6BEDBC2699B24A00ED33E9 /* UITabBar.swift in Sources */,
 				2D37E51126985634000D8C20 /* SceneDelegate.swift in Sources */,
 				2DBC38C327EF88FC0074BD14 /* ToDoTodayViewController.swift in Sources */,
-				2DFB4DE926C669D1000EA20F /* Board.swift in Sources */,
+				2D3DED9B28BA7E6F00CE81E6 /* GlobalValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
