@@ -8,7 +8,5 @@
 import UIKit
 
 class SpaceTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var label: UILabel!
     
 }
