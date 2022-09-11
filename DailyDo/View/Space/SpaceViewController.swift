@@ -7,55 +7,112 @@
 
 import Foundation
 import UIKit
+import CoreData
 
-class SpaceViewController:UIViewController, UITableViewDataSource {
+class SpaceViewController:UIViewController {
     
-    @IBOutlet var spaceTableView: UITableView!
+    @IBOutlet weak var spaceTableView: UITableView!
     
-    private func setRightNavigationBarItem() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage(systemName: "plus"),
-            style: .plain,
-            target: self,
-            action: #selector(action(sender:))
-        )
+    @IBAction func addSpacePlusButton(_ sender: UIBarButtonItem) {
+        
+        let newSpaceAlert = UIAlertController(title: "New Space", message: "Add name for Space", preferredStyle: .alert)
+        
+        let addSapceAction = UIAlertAction(title: "Add", style: .default) {
+            [unowned self ] action in
+            
+            guard let textField = newSpaceAlert.textFields?.first,
+                  let spaceToSave = textField.text else {
+                      return
+                  }
+            self.save(name: spaceToSave)
+            self.spaceTableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        newSpaceAlert.addTextField()
+        newSpaceAlert.addAction(addSapceAction)
+        newSpaceAlert.addAction(cancelAction)
+        
+        present(newSpaceAlert, animated: true)
     }
-    // MARK: tableView source: https://www.youtube.com/watch?v=R2Ng8Vj2yhY
     
-    struct SpaceCellStruct {
-        let title: String
+    func save(name: String) {
+      guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+        return
+      }
+
+      let managedContext = appDelegate.persistentContainer.viewContext
+      
+      // 2
+      let entity =
+        NSEntityDescription.entity(forEntityName: "Spaces",
+                                   in: managedContext)!
+      
+      let space = NSManagedObject(entity: entity,
+                                   insertInto: managedContext)
+      
+      // 3
+      space.setValue(name, forKeyPath: "spaceName")
+      
+      // 4
+      do {
+        try managedContext.save()
+        spacesCellName.append(space)
+      } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+      }
     }
+
     
-    let SpaceCellData: [SpaceCellStruct] = [
-        SpaceCellStruct(title: "dupa123"),
-        SpaceCellStruct(title: "dupa"),
-        SpaceCellStruct(title: "dupa12assssd3"),
-        SpaceCellStruct(title: "dupa12asd3"),
-        SpaceCellStruct(title: "dupa123sdfd"),
-        SpaceCellStruct(title: "dupa12"),
-    ]
+    var spacesCellName:[NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setRightNavigationBarItem()
+//        title = "dupa 123" MARK: tittle for VC display name
         
-        spaceTableView.dataSource = self
+        spaceTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addSpacePlusButton(_:)))
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SpaceCellData.count
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      
+      //1
+      guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+          return
+      }
+      
+      let managedContext =
+        appDelegate.persistentContainer.viewContext
+      
+      //2
+      let fetchRequest =
+        NSFetchRequest<NSManagedObject>(entityName: "Spaces")
+      
+      //3
+      do {
+        spacesCellName = try managedContext.fetch(fetchRequest)
+      } catch let error as NSError {
+        print("Could not fetch. \(error), \(error.userInfo)")
+      }
+    }
+}
+
+extension SpaceViewController: UITableViewDataSource {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return spacesCellName.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let spaceCell = SpaceCellData[indexPath.row]
-        let cell = spaceTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SpaceTableViewCell
-        cell.label.text = spaceCell.title
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let spaceName = spacesCellName[indexPath.row]
+        let cell = spaceTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        cell.textLabel?.text = spaceName.value(forKeyPath: "spaceName") as? String
         return cell
     }
-    
-    @objc func action(sender: UIBarButtonItem!) {
-        GlobalValues.tableViewCellIndicator += 1
-        print(GlobalValues.tableViewCellIndicator)
-    } /* MARK: actions for NavBar right item */
 }

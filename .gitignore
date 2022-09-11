@@ -88,4 +88,10 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# OS-specific files
+.DS_Store
+.Trashes
+Thumbs.db
+
+
 # End of https://www.toptal.com/developers/gitignore/api/swift,moacos
