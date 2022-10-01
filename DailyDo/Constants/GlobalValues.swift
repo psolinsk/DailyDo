@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
 struct GlobalValues {
     static var tableViewCellIndicator:Int = 0

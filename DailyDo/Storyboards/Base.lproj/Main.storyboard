@@ -8,16 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ToDoToday-->
-        <scene sceneID="zM4-Zx-Id1">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ToDoToday" id="lh3-7a-Woq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ToDo Today" image="checkmark.circle" catalog="system" id="Lio-x1-hhz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ivh-ms-hO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-575" y="520"/>
-        </scene>
         <!--Space-->
         <scene sceneID="dw6-zC-2kC">
             <objects>
@@ -50,16 +40,6 @@
             </objects>
             <point key="canvasLocation" x="-13" y="520"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="Opy-Fr-bMf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="8xR-hi-fgo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="Ic7-Zb-74Z"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iM4-hn-AfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="149" y="520"/>
-        </scene>
         <!--Main Tab Bar-->
         <scene sceneID="7Ed-8m-JYM">
             <objects>
@@ -73,15 +53,13 @@
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
-                            <integer key="value" value="2"/>
+                            <integer key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="lh3-7a-Woq" kind="relationship" relationship="viewControllers" id="IwL-iF-b8Z"/>
                         <segue destination="c3a-v1-RMD" kind="relationship" relationship="viewControllers" id="2qf-Fc-kW9"/>
                         <segue destination="0sp-pW-58U" kind="relationship" relationship="viewControllers" id="UlS-n8-SXK"/>
                         <segue destination="eXa-Df-qRi" kind="relationship" relationship="viewControllers" id="B9p-fj-Xch"/>
-                        <segue destination="8xR-hi-fgo" kind="relationship" relationship="viewControllers" id="ea8-XN-wpZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAv-Nw-bak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -90,7 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="plus.square.on.square" catalog="system" width="128" height="113"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
