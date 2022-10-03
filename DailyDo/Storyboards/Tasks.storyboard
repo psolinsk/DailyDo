@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="TasksNavigationController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873.91304347826099" y="109.82142857142857"/>
+            <point key="canvasLocation" x="845" y="-145"/>
         </scene>
         <!--Tasks-->
         <scene sceneID="le8-rW-rcr">
@@ -42,12 +42,38 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="e2p-Ui-pfU"/>
+                        <segue destination="qlk-zo-Tob" kind="relationship" relationship="rootViewController" id="UXL-Vf-T17"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5TU-xJ-8MA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-36.231884057971016" y="109.82142857142857"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="4eo-qZ-ose">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Jc-UM-czt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="qlk-zo-Tob" customClass="ReminderListViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="DvP-Sy-Oxd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hWO-Cs-NVH">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="qlk-zo-Tob" id="kph-mE-ihk"/>
+                            <outlet property="delegate" destination="qlk-zo-Tob" id="mrU-xa-hRY"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Tasks" id="5fB-GC-ibb"/>
+                </collectionViewController>
+            </objects>
+            <point key="canvasLocation" x="845" y="593"/>
         </scene>
     </scenes>
     <resources>
