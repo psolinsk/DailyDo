@@ -5,10 +5,9 @@
 //  Created by Patryk Soliński on 26/03/2022.
 //
 
-import Foundation
 import UIKit
 
-class ReminderListViewController:UICollectionViewController {
+class ReminderListViewController: UICollectionViewController {
     var dataSource: DataSource!
     var reminders: [Reminder] = Reminder.sampleData
     
@@ -24,16 +23,11 @@ class ReminderListViewController:UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
         
-        var snapshot = Snapshot()
-        snapshot.appendSections([0])
-        snapshot.appendItems(reminders.map { $0.id })
-        dataSource.apply(snapshot)
-        
         updateSnapshot()
         
         collectionView.dataSource = dataSource
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         let id = reminders[indexPath.item].id
         showDetail(for: id)

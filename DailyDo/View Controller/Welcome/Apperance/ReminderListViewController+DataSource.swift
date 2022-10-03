@@ -55,7 +55,7 @@ extension ReminderListViewController {
     }
     
     private func doneButtonAccessibilityAction(for reminder: Reminder) -> UIAccessibilityCustomAction {
-        let name = NSLocalizedString("Toggle completion", comment: "Reminder done button accessibilitylabel")
+        let name = NSLocalizedString("Toggle completion", comment: "Reminder done button accessibility label")
         let action = UIAccessibilityCustomAction(name: name) { [weak self] action in
             self?.completeReminder(with: reminder.id)
             return true
