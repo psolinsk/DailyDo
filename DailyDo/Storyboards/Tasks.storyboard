@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Space-->
+        <!--Tasks-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="SpaceViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,18 +19,18 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Space" id="yhM-g6-5sm"/>
+                    <navigationItem key="navigationItem" title="Tasks" id="yhM-g6-5sm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="873.91304347826099" y="109.82142857142857"/>
         </scene>
-        <!--Space-->
+        <!--Tasks-->
         <scene sceneID="le8-rW-rcr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WcZ-2L-xH4" customClass="SpaceNavigationController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Space" image="folder" catalog="system" selectedImage="folder.fill" id="6rY-ud-jVH"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WcZ-2L-xH4" customClass="TasksNavigationController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tasks" image="folder" catalog="system" selectedImage="folder.fill" id="6rY-ud-jVH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="WOC-Yr-jjQ">

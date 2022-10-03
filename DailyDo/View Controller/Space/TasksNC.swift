@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SpaceNavigationController:UINavigationController {
+class TasksNavigationController:UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
