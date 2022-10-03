@@ -34,8 +34,8 @@
 		2D95FCA228EB621D0043A9DE /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCA128EB621D0043A9DE /* UIView+PinnedSubview.swift */; };
 		2D95FCA428EB62460043A9DE /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCA328EB62460043A9DE /* TextFieldContentView.swift */; };
 		2D95FCA628EB62730043A9DE /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCA528EB62730043A9DE /* UIContentConfiguration+Stateless.swift */; };
-		2D95FCAA28EB66B00043A9DE /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCA928EB66B00043A9DE /* TextViewContentView.swift */; };
 		2D95FCAC28EB671A0043A9DE /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCAB28EB671A0043A9DE /* DatePickerContentView.swift */; };
+		2D95FCAE28EB6E7D0043A9DE /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCAD28EB6E7D0043A9DE /* TextViewContentView.swift */; };
 		2DBC38C027EF85E40074BD14 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38BF27EF85E40074BD14 /* ReminderListViewController.swift */; };
 		2DFB4DCE26C5C8B9000EA20F /* Tasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DCD26C5C8B9000EA20F /* Tasks.storyboard */; };
 		2DFB4DD226C5CB73000EA20F /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */; };
@@ -96,8 +96,8 @@
 		2D95FCA128EB621D0043A9DE /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
 		2D95FCA328EB62460043A9DE /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
 		2D95FCA528EB62730043A9DE /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
-		2D95FCA928EB66B00043A9DE /* TextViewContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewContentView.swift; path = ../../../../Downloads/UsingContentViews/Complete/Today/ContentViews/TextViewContentView.swift; sourceTree = "<group>"; };
 		2D95FCAB28EB671A0043A9DE /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
+		2D95FCAD28EB6E7D0043A9DE /* TextViewContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewContentView.swift; path = ../../../../.Trash/UsingContentViews/Complete/Today/ContentViews/TextViewContentView.swift; sourceTree = "<group>"; };
 		2DBC38BF27EF85E40074BD14 /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		2DFB4DCD26C5C8B9000EA20F /* Tasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tasks.storyboard; sourceTree = "<group>"; };
 		2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				2D95FCA128EB621D0043A9DE /* UIView+PinnedSubview.swift */,
-				2D95FCA928EB66B00043A9DE /* TextViewContentView.swift */,
+				2D95FCAD28EB6E7D0043A9DE /* TextViewContentView.swift */,
 				2D95FCA328EB62460043A9DE /* TextFieldContentView.swift */,
 				2D95FCA528EB62730043A9DE /* UIContentConfiguration+Stateless.swift */,
 				2D95FCAB28EB671A0043A9DE /* DatePickerContentView.swift */,
@@ -468,7 +468,7 @@
 				2D95FC9228EB480B0043A9DE /* UIColor+Today.swift in Sources */,
 				2D95FC9B28EB57080043A9DE /* ReminderViewController+Row.swift in Sources */,
 				2DBC38C027EF85E40074BD14 /* ReminderListViewController.swift in Sources */,
-				2D95FCAA28EB66B00043A9DE /* TextViewContentView.swift in Sources */,
+				2D95FCAE28EB6E7D0043A9DE /* TextViewContentView.swift in Sources */,
 				2D6BEDBE2699B64F00ED33E9 /* MainTabBar.swift in Sources */,
 				2DFB4DDD26C6608F000EA20F /* TasksNC.swift in Sources */,
 				2D95FC9828EB56840043A9DE /* ReminderViewController.swift in Sources */,
