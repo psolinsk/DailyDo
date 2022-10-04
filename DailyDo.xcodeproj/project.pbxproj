@@ -40,6 +40,11 @@
 		2D95FCB228EB800A0043A9DE /* TaskListViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCB128EB800A0043A9DE /* TaskListViewcontroller.swift */; };
 		2D95FCB428EB810D0043A9DE /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCB328EB810D0043A9DE /* ProgressHeaderView.swift */; };
 		2D95FCB628EB84240043A9DE /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCB528EB84240043A9DE /* CAGradientLayer+ListStyle.swift */; };
+		2D95FCB828EB89BD0043A9DE /* TodayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCB728EB89BD0043A9DE /* TodayError.swift */; };
+		2D95FCBA28EB89E50043A9DE /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCB928EB89E50043A9DE /* EKEventStore+AsyncFetch.swift */; };
+		2D95FCBC28EB8A220043A9DE /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCBB28EB8A220043A9DE /* Reminder+EKReminder.swift */; };
+		2D95FCBE28EB8A6C0043A9DE /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCBD28EB8A6C0043A9DE /* ReminderStore.swift */; };
+		2D95FCC028EC7BEE0043A9DE /* EKReminder+Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95FCBF28EC7BEE0043A9DE /* EKReminder+Reminder.swift */; };
 		2DBC38C027EF85E40074BD14 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC38BF27EF85E40074BD14 /* ReminderListViewController.swift */; };
 		2DFB4DCE26C5C8B9000EA20F /* Tasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DCD26C5C8B9000EA20F /* Tasks.storyboard */; };
 		2DFB4DD226C5CB73000EA20F /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */; };
@@ -106,6 +111,11 @@
 		2D95FCB128EB800A0043A9DE /* TaskListViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewcontroller.swift; sourceTree = "<group>"; };
 		2D95FCB328EB810D0043A9DE /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
 		2D95FCB528EB84240043A9DE /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
+		2D95FCB728EB89BD0043A9DE /* TodayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayError.swift; sourceTree = "<group>"; };
+		2D95FCB928EB89E50043A9DE /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
+		2D95FCBB28EB8A220043A9DE /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
+		2D95FCBD28EB8A6C0043A9DE /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		2D95FCBF28EC7BEE0043A9DE /* EKReminder+Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKReminder+Reminder.swift"; sourceTree = "<group>"; };
 		2DBC38BF27EF85E40074BD14 /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		2DFB4DCD26C5C8B9000EA20F /* Tasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tasks.storyboard; sourceTree = "<group>"; };
 		2DFB4DD126C5CB73000EA20F /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
@@ -156,6 +166,11 @@
 				2D95FC9128EB480B0043A9DE /* UIColor+Today.swift */,
 				2D95FCAF28EB7BFA0043A9DE /* ReminderListStyle.swift */,
 				2D95FCB528EB84240043A9DE /* CAGradientLayer+ListStyle.swift */,
+				2D95FCB728EB89BD0043A9DE /* TodayError.swift */,
+				2D95FCB928EB89E50043A9DE /* EKEventStore+AsyncFetch.swift */,
+				2D95FCBB28EB8A220043A9DE /* Reminder+EKReminder.swift */,
+				2D95FCBD28EB8A6C0043A9DE /* ReminderStore.swift */,
+				2D95FCBF28EC7BEE0043A9DE /* EKReminder+Reminder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +479,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D95FCBA28EB89E50043A9DE /* EKEventStore+AsyncFetch.swift in Sources */,
+				2D95FCB828EB89BD0043A9DE /* TodayError.swift in Sources */,
 				2D95FCA228EB621D0043A9DE /* UIView+PinnedSubview.swift in Sources */,
 				2D95FCB028EB7BFA0043A9DE /* ReminderListStyle.swift in Sources */,
 				2D95FCAC28EB671A0043A9DE /* DatePickerContentView.swift in Sources */,
@@ -471,6 +488,7 @@
 				2D95FCB628EB84240043A9DE /* CAGradientLayer+ListStyle.swift in Sources */,
 				2D95FC9D28EB5BBC0043A9DE /* ReminderViewController+Section.swift in Sources */,
 				2D37E50F26985634000D8C20 /* AppDelegate.swift in Sources */,
+				2D95FCBE28EB8A6C0043A9DE /* ReminderStore.swift in Sources */,
 				2DFB4DD626C5CD91000EA20F /* UIView Apperance.swift in Sources */,
 				2D95FCA428EB62460043A9DE /* TextFieldContentView.swift in Sources */,
 				2D95FCB428EB810D0043A9DE /* ProgressHeaderView.swift in Sources */,
@@ -484,11 +502,13 @@
 				2D95FC9228EB480B0043A9DE /* UIColor+Today.swift in Sources */,
 				2D95FC9B28EB57080043A9DE /* ReminderViewController+Row.swift in Sources */,
 				2DBC38C027EF85E40074BD14 /* ReminderListViewController.swift in Sources */,
+				2D95FCC028EC7BEE0043A9DE /* EKReminder+Reminder.swift in Sources */,
 				2D95FCAE28EB6E7D0043A9DE /* TextViewContentView.swift in Sources */,
 				2D6BEDBE2699B64F00ED33E9 /* MainTabBar.swift in Sources */,
 				2DFB4DDD26C6608F000EA20F /* TasksNC.swift in Sources */,
 				2D95FC9828EB56840043A9DE /* ReminderViewController.swift in Sources */,
 				2D95FC8E28EB41750043A9DE /* Data+Today.swift in Sources */,
+				2D95FCBC28EB8A220043A9DE /* Reminder+EKReminder.swift in Sources */,
 				2D95FC9628EB4BED0043A9DE /* ReminderListViewController+Action.swift in Sources */,
 				2D95FC9428EB49A50043A9DE /* ReminderListDoneButton.swift in Sources */,
 				2D6BEDBC2699B24A00ED33E9 /* UITabBar.swift in Sources */,
