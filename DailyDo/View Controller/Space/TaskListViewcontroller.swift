@@ -12,11 +12,11 @@ class TaskListViewController: UICollectionViewController {
     var dataSource: DataSource!
     var reminders: [Reminder] = []
     var filteredReminders: [Reminder] {
-        return reminders.filter { listStyle.shouldInclude(date: $0.dueDate) }.sorted { $0.dueDate < $1.dueDate }
+        return reminders.filter { listStyle.shouldInclude(date: $0.dueDate, isComp: $0.isComplete) }.sorted { $0.dueDate < $1.dueDate }
     }
     var listStyle: ReminderListStyle = .today
     let listStyleSegmentedControl = UISegmentedControl(items: [
-        ReminderListStyle.today.name, ReminderListStyle.future.name, ReminderListStyle.all.name
+        ReminderListStyle.today.name, ReminderListStyle.future.name, ReminderListStyle.all.name, ReminderListStyle.allCompleted.name
     ])
 
     //var headerView: ProgressHeaderView? // MARK: PROGRES

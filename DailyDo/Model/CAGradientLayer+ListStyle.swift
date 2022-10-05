@@ -29,6 +29,9 @@ extension CAGradientLayer {
         case .today:
             beginColor = .todayGradientTodayBegin
             endColor = .todayGradientTodayEnd
+        case .allCompleted:
+            beginColor = .todayGradientTodayBegin
+            endColor = UIColor.orange
         }
         return [beginColor.cgColor, endColor.cgColor]
     }
