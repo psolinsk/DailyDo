@@ -1,13 +1,13 @@
 //
-//  ReminderViewController+Action.swift
+//  TaskListViewController+Action.swift
 //  DailyDo
 //
-//  Created by Patryk Soliński on 03/10/2022.
+//  Created by Patryk Soliński on 04/10/2022.
 //
 
 import UIKit
 
-extension ReminderListViewController {
+extension TaskListViewController {
     
     @objc func eventStoreChanged(_ notification: NSNotification) {
         reminderStoreChanged()
@@ -44,3 +44,4 @@ extension ReminderListViewController {
     }
 
 }
+

@@ -10,7 +10,4 @@ import UIKit
 
 class AddTaskNavigationController:UINavigationController {
     
-    override func viewDidLoad(){
-        super.viewDidLoad()
-    }
 }

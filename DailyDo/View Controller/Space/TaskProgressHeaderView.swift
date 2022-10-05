@@ -1,13 +1,13 @@
 //
-//  ProgressHeaderView.swift
+//  TaskProgressHeaderView.swift
 //  DailyDo
 //
-//  Created by Patryk Soliński on 03/10/2022.
+//  Created by Patryk Soliński on 04/10/2022.
 //
 
 import UIKit
 
-class ProgressHeaderView: UICollectionReusableView {
+class TaskProgressHeaderView: UICollectionReusableView {
     static var elementKind: String { UICollectionView.elementKindSectionHeader }
 
     var progress: CGFloat = 0 {
@@ -62,7 +62,7 @@ class ProgressHeaderView: UICollectionReusableView {
         containerView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         
-        containerView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.80).isActive = true // MARK: Size of center
+        containerView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.30).isActive = true // MARK: Size of center
         
         upperView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         upperView.bottomAnchor.constraint(equalTo: lowerView.topAnchor).isActive = true
@@ -82,3 +82,4 @@ class ProgressHeaderView: UICollectionReusableView {
         lowerView.backgroundColor = .todayProgressLowerBackground
     }
 }
+

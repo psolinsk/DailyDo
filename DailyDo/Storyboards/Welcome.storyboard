@@ -18,6 +18,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="MZ0-qk-d9j">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPurpleColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -54,12 +55,41 @@
             </objects>
             <point key="canvasLocation" x="997" y="86"/>
         </scene>
+        <!--Today-->
+        <scene sceneID="y7E-Q2-cfl">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1S-tq-tQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="hFI-Ut-xsS" customClass="ReminderListViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ChO-Pt-USh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5MV-fl-FO5">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="hFI-Ut-xsS" id="3R6-sv-QhC"/>
+                            <outlet property="delegate" destination="hFI-Ut-xsS" id="3Gh-tq-eSv"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Today" id="8jp-Ko-S1z"/>
+                </collectionViewController>
+            </objects>
+            <point key="canvasLocation" x="997" y="86"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

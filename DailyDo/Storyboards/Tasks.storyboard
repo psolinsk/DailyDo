@@ -36,6 +36,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="WOC-Yr-jjQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPurpleColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lyw-qg-TGO">
@@ -53,7 +54,7 @@
         <scene sceneID="4eo-qZ-ose">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jc-UM-czt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <collectionViewController id="qlk-zo-Tob" customClass="ReminderListViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="qlk-zo-Tob" customClass="TaskListViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="DvP-Sy-Oxd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,6 +82,9 @@
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

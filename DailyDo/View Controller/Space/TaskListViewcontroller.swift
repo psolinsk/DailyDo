@@ -1,13 +1,13 @@
 //
-//  WelcomeViewController.swift
+//  TaskViewcontroller.swift
 //  DailyDo
 //
-//  Created by Patryk Soliński on 26/03/2022.
+//  Created by Patryk Soliński on 03/10/2022.
 //
 
 import UIKit
 
-class ReminderListViewController: UICollectionViewController {
+class TaskListViewController: UICollectionViewController {
     
     var dataSource: DataSource!
     var reminders: [Reminder] = []
@@ -19,7 +19,7 @@ class ReminderListViewController: UICollectionViewController {
         ReminderListStyle.today.name, ReminderListStyle.future.name, ReminderListStyle.all.name
     ])
 
-    var headerView: ProgressHeaderView? // MARK: PROGRES
+    //var headerView: ProgressHeaderView? // MARK: PROGRES
     
     var progress: CGFloat {
         let chunkSize = 1.0 / CGFloat(filteredReminders.count)
@@ -44,18 +44,18 @@ class ReminderListViewController: UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
         
-        let headerRegistration = UICollectionView.SupplementaryRegistration(elementKind: ProgressHeaderView.elementKind, handler: supplementaryRegistrationHandler) // MARK: PROGRES
+        //let headerRegistration = UICollectionView.SupplementaryRegistration(elementKind: ProgressHeaderView.elementKind, handler: supplementaryRegistrationHandler) // MARK: PROGRES
         
-        dataSource.supplementaryViewProvider = { supplementaryView, elementKind, indexPath in
-            return self.collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
-        } // MARK: PROGRES
+//        dataSource.supplementaryViewProvider = { supplementaryView, elementKind, indexPath in
+//            return self.collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
+//        } // MARK: PROGRES
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
                addButton.accessibilityLabel = NSLocalizedString("Add task", comment: "Add button accessibility label")
                navigationItem.rightBarButtonItem = addButton
         
         listStyleSegmentedControl.addTarget(self, action: #selector(didChangeListStyle(_:)), for: .valueChanged)
-        //navigationItem.titleView = listStyleSegmentedControl // MARK: DISPLAY SEGMENT CONTROLL
+        navigationItem.titleView = listStyleSegmentedControl // MARK: DISPLAY SEGMENT CONTROLL
         updateSnapshot()
         
         collectionView.dataSource = dataSource
@@ -111,7 +111,7 @@ class ReminderListViewController: UICollectionViewController {
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
-        listConfiguration.headerMode = .supplementary // MARK: PROGRES
+        //listConfiguration.headerMode = .supplementary // MARK: PROGRES
         listConfiguration.showsSeparators = false
         listConfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeActions
         listConfiguration.backgroundColor = .clear
@@ -129,7 +129,8 @@ class ReminderListViewController: UICollectionViewController {
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
-    private func supplementaryRegistrationHandler(progressView: ProgressHeaderView, elementKind: String, indexPath: IndexPath) {
-        headerView = progressView
-    } // MARK: PROGRES
+//    private func supplementaryRegistrationHandler(progressView: ProgressHeaderView, elementKind: String, indexPath: IndexPath) {
+//        headerView = progressView
+//    } // MARK: PROGRES
 }
+

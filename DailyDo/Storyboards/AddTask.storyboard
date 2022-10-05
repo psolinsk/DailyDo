@@ -2,21 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RLX-l9-34W">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add Task-->
-        <scene sceneID="Hd5-UD-EQm">
-            <objects>
-                <tableViewController id="wgZ-08-cs4" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Add Task" id="XY5-hg-sqO"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m2r-fd-vDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="454" y="94"/>
-        </scene>
         <!--Add task-->
         <scene sceneID="MxD-nV-vzz">
             <objects>
@@ -28,16 +18,45 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="wgZ-08-cs4" kind="relationship" relationship="rootViewController" id="xd8-1c-lVJ"/>
+                        <segue destination="NBA-ZY-xtJ" kind="relationship" relationship="rootViewController" id="l7E-vf-lM1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ra0-5u-Dfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-436" y="94"/>
         </scene>
+        <!--Today-->
+        <scene sceneID="W7X-VD-D5a">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTW-2O-LoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="NBA-ZY-xtJ" customClass="ReminderListViewController" customModule="DailyDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="of2-NU-MAp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wyC-hc-SA7">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="NBA-ZY-xtJ" id="7sQ-FH-ODM"/>
+                            <outlet property="delegate" destination="NBA-ZY-xtJ" id="mrm-jl-gEo"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Today" id="h3c-Hj-Eu3"/>
+                </collectionViewController>
+            </objects>
+            <point key="canvasLocation" x="519" y="94"/>
+        </scene>
     </scenes>
     <resources>
         <image name="plus.square.fill.on.square.fill" catalog="system" width="128" height="113"/>
         <image name="plus.square.on.square" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

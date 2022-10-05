@@ -48,6 +48,8 @@ class ReminderViewController: UICollectionViewController {
         
         navigationItem.title = NSLocalizedString("Reminder", comment: "Reminder view controller title")
         navigationItem.rightBarButtonItem = editButtonItem
+        navigationItem.leftBarButtonItem?.tintColor = UIColor.systemPurple
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.systemPurple
         
         updateSnapshotForViewing()
     }

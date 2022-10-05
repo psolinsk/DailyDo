@@ -12,5 +12,8 @@ class WelcomeNavigationController:UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let cancelButtonAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemPurple]
+         UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes , for: .normal)
     }
 }
