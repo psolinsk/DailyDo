@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  ReminderListViewController.swift
 //  DailyDo
 //
 //  Created by Patryk Soliński on 26/03/2022.
